@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Ativações - Mg Mega ™️</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #56555c;
+            margin: 20px;
+            padding: 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: #aaa9a9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(134, 122, 122, 0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddddddee;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #11148d;
+            color: white;
+        }
+        tr:hover {
+            background-color: #e20d0de8;
+            cursor: pointer;
+        }
+        .whatsapp {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        .qr-code img {
+            margin-top: 20px;
+            width: 200px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .qr-code img:hover {
+            transform: scale(1.1);
+        }
+        .btn-whatsapp {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #0077ff;
+            color: white;
+            font-size: 16px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .btn-whatsapp:hover {
+            background-color: #1da851;
+        }
+        .pix-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #00B894;
+            color: white;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background 0.3s;
+            margin-top: 20px;
+        }
+        .pix-button:hover {
+            background-color: #008C72;
+        }
+        .pix-key {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+<h1> MDM Fix Tool 6 horas </h1>
+<div class="container">
+    <table>
+        <tr>
+            <td>✅ ALUGUEL 6 HORAS</td>
+            <td>R$ 35,00</td>
+        </tr>
+    </table>
+    <p class="whatsapp">APÓS ENVIE O COMPROVANTE NO NOSSO WHATSAPP:</p>
+
+    <!-- QR Code -->
+    <div class="qr-code">
+        <img src="qr.jpeg" alt="QR Code para WhatsApp">
+    </div>
+
+    <!-- Botão WhatsApp -->
+    <a href="https://wa.me/5561982411470?text=Ol%C3%A1,%20Mg%20Mega" class="btn-whatsapp" target="_blank">Fale Conosco no WhatsApp</a>
+    
+    <!-- Botão Pix -->
+    <a href="#" class="pix-button" onclick="copiarChave()">Copia chave Pix</a>
+    <p id="mensagem" style="color: green; display: none;">chave copiada</p>
+    <p class="pix-key">Click a cima: <strong id="chavePix"</strong></p>
+</div>
+
+<!-- JavaScript -->
+<script>
+    // Alerta ao clicar na tabela
+    document.querySelectorAll("table tr").forEach(row => {
+        row.addEventListener("click", () => {
+            alert("Para mais informações, entre em contato no WhatsApp!");
+        });
+    });
+
+    function copiarChave() {
+        const chavePix = "SUA_CHAVE_PIX_AQUI"; // Substitua pela sua chave Pix
+        navigator.clipboard.writeText(chavePix).then(() => {
+            document.getElementById('mensagem').style.display = 'block';
+            setTimeout(() => {
+                document.getElementById('mensagem').style.display = 'none';
+            }, 2000);
+        });
+    }
+</script>
+</body>
+</html>
