@@ -65,6 +65,27 @@
         .btn-whatsapp:hover {
             background-color: #1da851;
         }
+        .pix-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #00B894;
+            color: white;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background 0.3s;
+            margin-top: 20px;
+        }
+        .pix-button:hover {
+            background-color: #008C72;
+        }
+        .pix-key {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #333;
+        }
     </style>
 </head>
 <body>
@@ -93,7 +114,7 @@
                 <td>R$ 20,00</td>
             </tr>
         </table>
-        <p class="whatsapp">ESCOLHA A OPÇÃO, LEIA O CÓDIGO QR E APÓS ENVIE O COPROVANTE NO NOSSO WHATSAPP:</p>
+        <p class="whatsapp">ESCOLHA A OPÇÃO, LEIA O CÓDIGO QR E APÓS ENVIE O COMPROVANTE NO NOSSO WHATSAPP:</p>
 
         <!-- QR Code -->
         <div class="qr-code">
@@ -102,6 +123,11 @@
 
         <!-- Botão WhatsApp -->
         <a href="https://wa.me/5561982411470?text=Ol%C3%A1,%20Mg%20Mega" class="btn-whatsapp" target="_blank">Fale Conosco no WhatsApp</a>
+        
+        <!-- Botão Pix -->
+        <a href="#" class="pix-button" onclick="copiarChave()">Pagar com Pix</a>
+        <p id="mensagem" style="color: green; display: none;">Chave Pix copiada!</p>
+        <p class="00020126330014br.gov.bcb.pix0111022751006285204000053039865802BR5924FELIPE LORRAN LIMA SOUTO6009Sao Paulo62290525REC67DB28B7A5D3946193282763047221">Click e copia o codigo: <strong id="Click e copia o codigo"></strong></p>
     </div>
 
     <!-- JavaScript -->
@@ -112,6 +138,16 @@
                 alert("Para mais informações, entre em contato no WhatsApp!");
             });
         });
+
+        function copiarChave() {
+            const chavePix = "00020126330014br.gov.bcb.pix0111022751006285204000053039865802BR5924FELIPE LORRAN LIMA SOUTO6009Sao Paulo62290525REC67DB28B7A5D3946193282763047221"; // Substitua pela sua chave Pix
+            navigator.clipboard.writeText(chavePix).then(() => {
+                document.getElementById('mensagem').style.display = 'block';
+                setTimeout(() => {
+                    document.getElementById('mensagem').style.display = 'none';
+                }, 2000);
+            });
+        }
     </script>
 </body>
 </html>
