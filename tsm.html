@@ -65,33 +65,72 @@
         .btn-whatsapp:hover {
             background-color: #1da851;
         }
+        .pix-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #00B894;
+            color: white;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background 0.3s;
+            margin-top: 20px;
+        }
+        .pix-button:hover {
+            background-color: #008C72;
+        }
+        .pix-key {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #333;
+        }
     </style>
 </head>
 <body>
 <h1> tsm 6 horas </h1>
-                <td>✅ ALUGUEL 6 HORAS</td>
-                <td>R$ 35,00</td>
-            </tr>
-        </table>
-        <p class="whatsapp">APÓS ENVIE O COPROVANTE NO NOSSO WHATSAPP:</p>
+<div class="container">
+    <table>
+        <tr>
+            <td>✅ ALUGUEL 6 HORAS</td>
+            <td>R$ 35,00</td>
+        </tr>
+    </table>
+    <p class="whatsapp">APÓS ENVIE O COMPROVANTE NO NOSSO WHATSAPP:</p>
 
-        <!-- QR Code -->
-        <div class="qr-code">
-            <img src="qr.jpeg" alt="QR Code para WhatsApp">
-        </div>
-
-        <!-- Botão WhatsApp -->
-        <a href="https://wa.me/5561982411470?text=Ol%C3%A1,%20Mg%20Mega" class="btn-whatsapp" target="_blank">Fale Conosco no WhatsApp</a>
+    <!-- QR Code -->
+    <div class="qr-code">
+        <img src="qr.jpeg" alt="QR Code para WhatsApp">
     </div>
 
-    <!-- JavaScript -->
-    <script>
-        // Alerta ao clicar na tabela
-        document.querySelectorAll("table tr").forEach(row => {
-            row.addEventListener("click", () => {
-                alert("Para mais informações, entre em contato no WhatsApp!");
-            });
+    <!-- Botão WhatsApp -->
+    <a href="https://wa.me/5561982411470?text=Ol%C3%A1,%20Mg%20Mega" class="btn-whatsapp" target="_blank">Fale Conosco no WhatsApp</a>
+    
+    <!-- Botão Pix -->
+    <a href="#" class="pix-button" onclick="copiarChave()">Copia chave Pix</a>
+    <p id="mensagem" style="color: green; display: none;">Chave Pix copiada!</p>
+    <p class="pix-key">Click a cima: <strong id="chavePix"</strong></p>
+</div>
+
+<!-- JavaScript -->
+<script>
+    // Alerta ao clicar na tabela
+    document.querySelectorAll("table tr").forEach(row => {
+        row.addEventListener("click", () => {
+            alert("Para mais informações, entre em contato no WhatsApp!");
         });
-    </script>
+    });
+
+    function copiarChave() {
+        const chavePix = "SUA_CHAVE_PIX_AQUI"; // Substitua pela sua chave Pix
+        navigator.clipboard.writeText(chavePix).then(() => {
+            document.getElementById('mensagem').style.display = 'block';
+            setTimeout(() => {
+                document.getElementById('mensagem').style.display = 'none';
+            }, 2000);
+        });
+    }
+</script>
 </body>
 </html>
