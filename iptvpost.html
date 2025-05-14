@@ -153,10 +153,21 @@
       <p><strong>Atenção:</strong> Alguns canais podem estar sujeitos à disponibilidade regional.</p>
       <p><strong>Reality Show 24h</strong> disponível com programação exclusiva.</p>
     </div>
-<audio autoplay controls loop>
+<audio id="bg-audio" autoplay muted>
   <source src="audio.mpeg" type="audio/mpeg">
   Seu navegador não suporta áudio HTML5.
 </audio>
+
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    const audio = document.getElementById('bg-audio');
+    audio.muted = false;
+    audio.play().catch(err => {
+      console.warn('Autoplay bloqueado pelo navegador:', err);
+    });
+  });
+</script>
+
 
     <div class="faq-section">
       <h3>Perguntas Frequentes:</h3>
