@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MG Mega - Desbloqueio Conta Google Android 14</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: url('https://www.mobikin.com/d/file/phone-unlock/bypass-frp-lock-on-motorola.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+        }
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.7);
+            min-height: 100vh;
+            padding-bottom: 30px;
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.9);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.5);
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: rgba(20, 20, 20, 0.9);
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #cccccc;
+        }
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        h1, h2, h3, p, li {
+            color: white;
+        }
+        ul {
+            background-color: rgba(30, 30, 30, 0.8);
+            padding: 15px;
+            border-radius: 8px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .features {
+            background: rgba(50, 50, 50, 0.8);
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            line-height: 1.6;
+        }
+        button {
+            background-color: black;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 15px;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #333333;
+        }
+        footer {
+            background-color: rgba(0, 0, 0, 0.9);
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 40px;
+            font-size: 14px;
+        }
+        footer a {
+            color: #ccc;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay">
+        <header>
+            <h1>MG Mega - Soluções em Desbloqueio</h1>
+            <p>Especialistas em FRP e Assistência Técnica Motorola</p>
+        </header>
+        <nav>
+            <a href="#">Início</a>
+            <a href="#">Serviços</a>
+            <a href="#">Aparelhos Suportados</a>
+            <a href="#">Contato</a>
+        </nav>
+        <div class="container">
+            <h2>🔓 Desbloqueio Conta Google Android 14 🔓</h2>
+            <p>Oferecemos o desbloqueio de Conta Google (FRP) em celulares Motorola com Android 14 e processador Qualcomm Snapdragon:</p>
+            <h3>📱 Modelos Suportados:</h3>
+            <ul>
+                <li>Motorola Moto G45 5G</li>
+                <li>Motorola G42</li>
+                <li>Motorola G34</li>
+                <li>Motorola G53</li>
+                <li>Motorola Moto G62 5G</li>
+                <li>Motorola Moto G85 5G</li>
+                <li>Motorola Moto G96 5G</li>
+                <li>Motorola Edge 50 Fusion</li>
+                <li>Motorola Edge 60 Stylus</li>
+                <li>Motorola Moto G71</li>
+                <li>Motorola Moto G60</li>
+                <li>Motorola Moto G100</li>
+                <li>Motorola Moto G200</li>
+                <li>Motorola Edge 20</li>
+                <li>Motorola Edge 30</li>
+            </ul>
+
+            <h3>📍 Local de Serviço:</h3>
+            <p>Atendimento presencial e suporte online para a região de <strong>Luziânia - GO</strong>.</p>
+
+            <div class="features">
+                ✅ Processo rápido <br>
+                ✅ 100% Seguro <br>
+                ✅ Suporte especializado via WhatsApp
+            </div>
+            <button onclick="contatoWhatsApp()">📞 Fale Conosco no WhatsApp</button>
+        </div>
+        <footer>
+            &copy; 2025 MG Mega - Todos os direitos reservados.<br />
+            📧 Contato: <a href="mailto:mgmega@example.com">mgmega@example.com</a>
+        </footer>
+    </div>
+    <script>
+        function contatoWhatsApp() {
+            alert("Redirecionando para o WhatsApp MG Mega...");
+            window.open("https://wa.me/5561982411470", "_blank");
+        }
+    </script>
+</body>
+</html>
