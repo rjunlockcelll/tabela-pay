@@ -1,208 +1,237 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MG-mega Desbloqueios</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-             background-image: url('https://www.notebookcheck.info/fileadmin/Notebooks/News/_nc4/Samsung-Galaxy-S25-series-better-face-unlock.jpg');
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            text-align: center;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 02px;
-            font-size: 20px;
-            position: relative;
-        }
-      
-        main {
-            padding: 20px;
-        }
-        .device-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-        }
-        .device {
-            background: white;
-            padding: 10px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 200px;
-        }
-        .device img {
-            width: 100%;
-            border-radius: 8px;
-        }
-        .device a {
-            text-decoration: none;
-            color: black;
-            display: block;
-            margin-top: 10px;
-            font-weight: bold;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            padding: 100px;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MG Mega Desbloqueios</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: linear-gradient(135deg, #141e30, #243b55);
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background: rgba(0,0,0,0.8);
+      padding: 20px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      backdrop-filter: blur(6px);
+      animation: fadeDown 1s ease;
+    }
+
+    header img {
+      max-width: 160px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+      transition: transform 0.3s;
+    }
+
+    header img:hover {
+      transform: scale(1.05);
+    }
+
+    header h1 {
+      font-size: 2rem;
+      margin: 10px 0;
+      letter-spacing: 1px;
+    }
+
+    header h2 {
+      font-weight: normal;
+      font-size: 1.2rem;
+      opacity: 0.85;
+    }
+
+    main {
+      flex: 1;
+      padding: 40px 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .device-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 25px;
+      width: 100%;
+      max-width: 1200px;
+      animation: fadeUp 1.5s ease;
+    }
+
+    .device {
+      background: linear-gradient(160deg, #1e293b, #334155);
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.6);
+      transition: transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+      opacity: 0;
+      animation: fadeIn 1s forwards;
+    }
+
+    .device:hover {
+      transform: translateY(-8px) scale(1.03);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.8);
+    }
+
+    .device img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      transition: transform 0.4s;
+    }
+
+    .device:hover img {
+      transform: scale(1.1);
+    }
+
+    .device p {
+      margin: 15px 0;
+      font-size: 1.1rem;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .device a {
+      display: block;
+      color: #fff;
+      text-decoration: none;
+      padding: 10px;
+    }
+
+    footer {
+      background: rgba(0,0,0,0.85);
+      text-align: center;
+      padding: 25px;
+      margin-top: auto;
+      animation: fadeUp 1s ease;
+    }
+
+    footer a {
+      color: #4ade80;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    footer a:hover {
+      color: #22c55e;
+    }
+
+    footer p {
+      margin: 6px 0;
+      font-size: 0.9rem;
+      opacity: 0.9;
+    }
+
+    /* Animações */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeDown {
+      from { opacity: 0; transform: translateY(-50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <img src="mg.jpeg" width="350px" height=250px" alt="Cell-tech Logo" class="logo">
-        <p>
-            <h1>MG-mega Desbloqueios</h1><h2>seja bem vindo</h2></p>
-    </header>
-    <main>
-     
-        <div class="device-container">
-            <div class="device">
-                <a href="tabela.html" target="_self">
-                    <img src="tb.png" alt="Aparelho 2"> 
-                    <p> TABELA <p></p></p>
-                </a>
-            </div>
+  <header>
+    <img src="https://via.placeholder.com/300x180.png?text=MG+Mega" alt="Logo MG Mega">
+    <h1>MG Mega Desbloqueios</h1>
+    <h2>Seja bem-vindo 🚀</h2>
+  </header>
 
-              <div class="device">
-                <a href="motorola frp.html" target="_self">
-                    <img src="https://pics.chimeratool.com/modelimages/13565_1650618792_62f1ed27f5d4b46328d01f87a2b75fb6552b9940.png"> 
-                    <p> MOTOROLA <p></p></p>
-                </a>
-            </div>
+  <main>
+    <div class="device-container">
+      <!-- Tabela -->
+      <div class="device">
+        <a href="https://tabela-pay-joy.netlify.app/tabela">
+          <img src="./MG-mega Desbloqueios_files/tb.png" alt="Tabela">
+          <p>TABELA</p>
+        </a>
+      </div>
 
-  <div class="device">
-                <a href="tab.html" target="_self">
-                    <img src="https://cdn.dfg.com.br/itemimages/934543608-consulta-de-dados-pessoais-cpf-rg-nome-telefone-e-HFM7.webp" alt="Aparelho 3">
-                    <p> PUXADAS DE DADOS <p></p></p>
-                </a>
-            </div>
+      <!-- Motorola -->
+      <div class="device">
+        <a href="https://tabela-pay-joy.netlify.app/motorola%20frp.html">
+          <img src="./MG-mega Desbloqueios_files/motorola.png" alt="Motorola">
+          <p>MOTOROLA</p>
+        </a>
+      </div>
 
-            <div class="device">
-                <a href="iptvpost.HTML" target="_self">
-                    <img src="https://play-lh.googleusercontent.com/eQuiBINHK6NhU7Gb5pZWYBd0-EEaQZO-UgRHnVHfy25SZd4FdioHzndYw9miii1zVQ" alt="Aparelho 3">
-                    <p> IPTV P2P<p></p></p>
-                </a>
-            </div>
+      <!-- Samsung -->
+      <div class="device">
+        <a href="https://tabela-pay-joy.netlify.app/samsungfrp.html">
+          <img src="./MG-mega Desbloqueios_files/samsung.png" alt="Samsung">
+          <p>SAMSUNG</p>
+        </a>
+      </div>
 
-            
-    <div class="device">
-                <a href="https://wa.me/5561981426730?text=ola,+Mg+mega+me+explica+como+fuciona?" target="_blank">
-                    <img src="https://comprepayjoy.com.br/wp-content/uploads/2024/04/5.png" alt="Aparelho 3">
-                    <p> REALME pay joy <p></p></p>
-                </a>
-            </div>
+      <!-- Xiaomi -->
+      <div class="device">
+        <a href="https://tabela-pay-joy.netlify.app/xiaomi.html">
+          <img src="./MG-mega Desbloqueios_files/xiaomi.png" alt="Xiaomi">
+          <p>XIAOMI</p>
+        </a>
+      </div>
 
+      <!-- UnlockTool -->
+      <div class="device">
+        <a href="https://tabela-pay-joy.netlify.app/unlocktool.html">
+          <img src="./MG-mega Desbloqueios_files/unlocktool.png" alt="UnlockTool">
+          <p>UNLOCKTOOL</p>
+        </a>
+      </div>
 
-   <div class="device">
-                <a href="https://wa.me/5561981426730?text=ola,+Mg+mega+como+fuciona?" target="_blank">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlLXVOmO6Opl0fl_AYG1xhZKBxYL-ITOSK8Q&s" alt="Aparelho 3">
-                    <p> TECNO<p></p></p>
-                </a>
-            </div>
+      <!-- Hydra -->
+      <div class="device">
+        <a href="https://tabela-pay-joy.netlify.app/hydra.html">
+          <img src="./MG-mega Desbloqueios_files/hydra.png" alt="Hydra Tool">
+          <p>HYDRA TOOL</p>
+        </a>
+      </div>
 
+      <!-- Puxadas de Dados -->
+      <div class="device">
+        <a href="https://tabela-pay-joy.netlify.app/tab">
+          <img src="./MG-mega Desbloqueios_files/puxada.webp" alt="Puxadas de dados">
+          <p>PUXADAS DE DADOS</p>
+        </a>
+      </div>
 
-            
-            <div class="device">
-                <a href="https://wa.me/5561981426730?text=ola,+Mg+mega+como+seria+o+desbloqueio?" target="_blank">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSItuIlOAVSpmjIR7Fc8lY_ydpA0FWM6sAwZQ&s" alt="Aparelho 2">
-                    <p> SAMSUNG MDM <P></P></p>
-                </a>
-            </div>
+      <!-- IPTV -->
+      <div class="device">
+        <a href="https://tabela-pay-joy.netlify.app/iptvpost.HTML">
+          <img src="./MG-mega Desbloqueios_files/iptv.png" alt="IPTV">
+          <p>IPTV P2P</p>
+        </a>
+      </div>
+    </div>
+  </main>
 
-    <div class="device">
-                <a href="https://wa.me/5561981426730?text=ola,+Mg+mega+suporta+quais+modelos?" target="_blank">
-                    <img src="https://5.imimg.com/data5/ANDROID/Default/2021/6/QT/GZ/WZ/99625781/product-jpeg-500x500.jpg" alt="Aparelho 3">
-                    <p> SAMSUNG VIA IMEI <p></p></p>
-                </a>
-            </div>
-
-            
-            <div class="device">
-                <a href="https://wa.me/5561981426730?text=ola,+Mg+mega+tenho+interesse+como+fuciona?" target="_blank">
-                    <img src="https://www.mundoconectado.com.br/wp-content/uploads/2024/03/iphone-password-912x569.jpg" alt="Aparelho 3">
-                    <p> PASCODE 6S AO X <p>senha manda o modelo</p>
-                
-                    </p>
-                </a>
-            </div>
-
-<div class="device">
-                <a href="https://wa.me/5561981426730?text=ola,+Mg+mega+como+seria+o+desbloqueio?" target="_blank">
-                    <img src="definitivo.jpg" alt="Aparelho 2">
-                    <p> CONTA MI <P></P></p>
-                </a>
-            </div>
-
-
-            
-            <div class="device">
-                <a href="https://wa.me/5561981426730?text=ola,+Mg+mega+como+fuciona?" target="_blank">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgAXFOL2itumGu0xBaKPUx78prTu_3fG6CD9pU2W09QQBMM8d8UDnjxFnnmCkBzjOKsVk&usqp=CAU" alt="Aparelho 3">
-                    <p>FRP XIAOMI <p></p></p>
-                </a>
-            </div>
-
-
-
-
-        
-            <div class="device">
-                <a href="unlock.tb.html" target="_self">
-                    <img src="UnlockTool.png" alt="Aparelho 3">
-                    <p> UNLOCKTOOL  6hrs <p></p></p>
-                </a>
-            </div>
-
-
-            <div class="device">
-                <a href="tsm.html" target="_self">
-                    <img src="https://http2.mlstatic.com/D_NQ_NP_866235-MLM81488354715_122024-O.webp" alt="Aparelho 3">
-                    <p> TSM-TOOL <P></P></p>
-                </a>
-            </div>
-
-
-            <div class="device">
-                <a href="mdm.html" target="_blank">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqUalgrM1-U4UBOsmD0X2ynWlE2e3h8dRmSA&s" alt="Aparelho 3">
-                    <p> MDM FIX TOOL<p>
-                        <p></p>
-                    </p>
-                </a>
-            </div>
-
-
-        
-
-
-
-
-
-
-
- </div>
-       
-
- <p>Contato: <a href="https://wa.me/5561981426730" target="_blank"><h2>+55 61 98142-6730</h2></a></p>
-    <p>Email: <a href="mailto:celltech@gmail.com">Cell-tech@gmail.com</a></p>
-  
+  <footer>
+    <p>📞 Contato: <a href="https://wa.me/5561981426730" target="_blank">+55 61 98142-6730</a></p>
+    <p>✉️ Email: <a href="mailto:celltech@gmail.com">celltech@gmail.com</a></p>
+    <p>© 2025 MG Mega Desbloqueios</p>
+  </footer>
 </body>
-    </html>
-    
-    </main>
-</body>
-
 </html>
-
-    
