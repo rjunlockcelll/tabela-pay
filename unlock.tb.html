@@ -6,20 +6,21 @@
     <title>Lista de Ativações - Cell-tech ™️</title>
     <style>
         body {
-               background: url(https://i0.wp.com/www.mobilerdx.com/wp-content/uploads/2023/05/Download-UnlockTool-Latest-Setup.jpg?w=1120&ssl=1) center / cover no-repeat;
+            background: url(https://i0.wp.com/www.mobilerdx.com/wp-content/uploads/2023/05/Download-UnlockTool-Latest-Setup.jpg?w=1120&ssl=1) center / cover no-repeat;
             font-family: Arial, sans-serif;
             background-color: #1a1920;
-            margin: 20px;
+            margin: 0;   /* Remove a borda cinza */
             padding: 0;
             text-align: center;
         }
         .container {
             max-width: 600px;
             margin: auto;
-            background: #aaa9a9;
+            background: rgba(0,0,0,0.6); /* Fundo preto transparente */
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: none; /* Sem sombra */
+            color: white;
         }
         table {
             width: 100%;
@@ -85,7 +86,7 @@
         .pix-key {
             margin-top: 10px;
             font-size: 16px;
-            color: #333;
+            color: #fff;
         }
     </style>
 </head>
@@ -127,8 +128,8 @@
         
         <!-- Botão Pix -->
         <a href="#" class="pix-button" onclick="copiarChave()">Pagar com Pix</a>
-        <p id="mensagem" style="color: green; display: none;">Chave Pix copiada!</p>
-        <p class="00020126330014br.gov.bcb.pix0111022751006285204000053039865802BR5924FELIPE LORRAN LIMA SOUTO6009Sao Paulo62290525REC67DB28B7A5D3946193282763047221">Click e copia o codigo: <strong id="Click e copia o codigo"></strong></p>
+        <p id="mensagem" style="color: #1aff1a; display: none;">Chave Pix copiada!</p>
+        <p class="pix-key">Clique e copie o código Pix: <strong id="pix-code"></strong></p>
     </div>
 
     <!-- JavaScript -->
@@ -141,9 +142,10 @@
         });
 
         function copiarChave() {
-            const chavePix = "00020126330014br.gov.bcb.pix0111022751006285204000053039865802BR5924FELIPE LORRAN LIMA SOUTO6009Sao Paulo62290525REC67DB28B7A5D3946193282763047221"; // Substitua pela sua chave Pix
+            const chavePix = "00020126330014br.gov.bcb.pix0111022751006285204000053039865802BR5924FELIPE LORRAN LIMA SOUTO6009Sao Paulo62290525REC67DB28B7A5D3946193282763047221"; 
             navigator.clipboard.writeText(chavePix).then(() => {
                 document.getElementById('mensagem').style.display = 'block';
+                document.getElementById('pix-code').textContent = chavePix;
                 setTimeout(() => {
                     document.getElementById('mensagem').style.display = 'none';
                 }, 2000);
@@ -152,7 +154,3 @@
     </script>
 </body>
 </html>
-
-
-
-
